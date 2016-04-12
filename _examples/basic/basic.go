@@ -16,7 +16,7 @@ func main() {
 
 	// Plugin multiple middlewares writting some logs
 	vs.Use(func(w http.ResponseWriter, r *http.Request, h http.Handler) {
-		log.Info("[%s] %s", r.Method, r.RequestURI)
+		log.Infof("[%s] %s", r.Method, r.RequestURI)
 		h.ServeHTTP(w, r)
 	})
 
