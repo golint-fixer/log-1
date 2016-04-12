@@ -13,7 +13,7 @@ import (
 // mu provides thread synchronization for the public singleton API.
 var mu = sync.Mutex{}
 
-// Logger represents the standard default Logrus based logger.
+// Logger represents the standard default built-in logger (equivalent to default Logrus logger).
 var Logger = log.New()
 
 // New creates a new Logrus based logger.
